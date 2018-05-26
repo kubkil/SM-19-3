@@ -33,16 +33,14 @@ export const THUMB_DOWN = 'THUMB_DOWN';
   dislikesNumber
 }
 
-function addComment(text, author) {
+function addComment(text) {
   return {
     type: ADD_COMMENT,
     text,
-    author,
     id: uuid.v4()
   }
 }
 
-// jak przekazać właściwe id?
 function editComment(text, id) {
   return {
     type: EDIT_COMMENT,
@@ -71,3 +69,9 @@ function thumbDown(dislikesNumber) {
     dislikesNumber
   }
 }
+
+const boundAddComment = text => dispatch(addComment(text));
+const boundEditComment = text => dispatch(editComment(text, id));
+const boundRemoveComment = text => dispatch(removeComment(id));
+const boundThumbUp = text => dispatch(thumbUp(likesNumber));
+const boundThumbDown = text => dispatch(thumbDown(dislikesNumber));
