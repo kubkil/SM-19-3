@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/kubkil/SM-19-3/issues"
   },
-  "homepage": "https://github.com/kubkil/SM-19-3#readme"
+  "homepage": "https://github.com/kubkil/SM-19-3#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
