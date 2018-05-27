@@ -5,4 +5,4 @@ import users from './users';
 const app = combineReducers({
   comments,
   users
-})
+});
