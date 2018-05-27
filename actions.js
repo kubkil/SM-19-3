@@ -1,6 +1,5 @@
 import uuid from uuid;
 
-// zmienne potrzebne? export potrzebne?
 export const ADD_COMMENT = 'ADD_COMMENT';
 export const EDIT_COMMENT = 'EDIT_COMMENT';
 export const REMOVE_COMMENT = 'REMOVE_COMMENT';
@@ -24,7 +23,6 @@ export const removeComment = id => ({
   id
 })
 
-// to samo id co w comment?
 // index zamiast id?
 export const thumbUp = commentId => ({
   type: THUMB_UP,
